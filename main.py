@@ -29,9 +29,12 @@ splitter  = RecursiveCharacterTextSplitter(
     chunk_size = 500,
     chunk_overlap = 100
 )
+
+
 chunks = splitter.split_documents(docs)
 print(len(chunks))
-chain = template | model | parser
-result = chain.invoke({"data" : docs})
 
+chain = template | model | parser
+
+result = chain.invoke({"data" : docs})
 # print(result)

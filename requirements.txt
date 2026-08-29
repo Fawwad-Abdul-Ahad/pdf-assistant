@@ -1,5 +1,5 @@
 fastapi
-uvicorn[standard]
+uvicorn
 python-multipart
 
 langchain
@@ -7,7 +7,7 @@ langchain-community
 langchain-text-splitters
 langchain-mistralai
 
-mistralai
+mistralai   
 
 pypdf
 
