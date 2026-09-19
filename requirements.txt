@@ -1,18 +1,35 @@
 fastapi
-uvicorn
+uvicorn[standard]
 python-multipart
+pydantic
+pydantic-settings
+python-dotenv
 
+fastapi-cors
+
+mistralai
 langchain
+langchain-core
 langchain-community
-langchain-text-splitters
 langchain-mistralai
-
-mistralai   
-
-pypdf
+langchain-text-splitters
 
 chromadb
 langchain-chroma
 
-python-dotenv
-pydantic
+sentence-transformers
+langchain-huggingface
+
+faster-whisper
+
+yt-dlp
+
+ffmpeg-python
+pydub
+
+reportlab
+
+requests
+aiofiles
+tqdm
+numpy
