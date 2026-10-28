@@ -57,7 +57,19 @@ def process_audio(source : str) -> list:
     else:
         filename = source
     wav_path = convert_to_wav(filename)
-    chunks = chunk_vdeo(wav_path)
+    chunks = chunk_vdeo(wav_path)       
     return chunks
 
-process_audio("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+import os
+import shutil
+
+def cleanup(file_paths: list):
+    """
+    Delete all temporary audio files after processing.
+    """
+    for filename in os.listdir(DOWNLOAD_DIR):
+        file_path = os.path.join(DOWNLOAD_DIR, filename)
+        if os.path.isfile(file_path):
+            os.remove(file_path)
+            print(f"Deleted: {file_path}")
+    print("Downloads folder cleaned.")

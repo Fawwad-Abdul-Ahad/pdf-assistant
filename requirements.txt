@@ -20,7 +20,7 @@ langchain-chroma
 sentence-transformers
 langchain-huggingface
 
-faster-whisper
+openai-whisper
 
 yt-dlp
 
@@ -28,6 +28,9 @@ ffmpeg-python
 pydub
 
 reportlab
+
+groq
+whisper
 
 requests
 aiofiles

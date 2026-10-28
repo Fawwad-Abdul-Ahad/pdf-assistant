@@ -50,7 +50,7 @@ vector_stores = Chroma(
 
 retriever = vector_stores.as_retriever(
     search_type = "mmr",
-    search_kwargs = {
+    search_kwargs = { 
         "k" : 4,
         "fetch_k" : 10,
         "lambda_mult":0.5
